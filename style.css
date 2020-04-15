@@ -1,70 +1,53 @@
-#title{
-  text-align: center;
-  font-family: 'Paytone One', sans-serif;
-  color:white;
-  font-size:45px;
-
-}
-
- #wrapper{
+#wrapper{
   display:grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  gird-template-row: 500px;
-  grid-gap: 10px;
-  justify-items: center
-} 
-
-#pic{
-  width: 750px;
- height:550px;
-  margin-top:20px;
-
-
+  grid-template-rows: 100px 500px 400px 400px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap:10px;
 }
 
-
-
-#back{
-  margin-top:500px;
-    margin-left:150px;
-  border: none;
- background-color: #e7e7e7; color: black;
-  padding: 12px 29px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+#heading{
+  grid-area:1/1/2/6;
+  text-align:center;
+  background-color:#00E8FF ;
+  color:white;
+  font-family: 'Josefin Sans', sans-serif;
+ padding-top:20px;
+  font-size:55px;
 }
 
-#next{
- margin-top:500px;
-  margin-right:150px;
-  border-style: none;
-  background-color: #e7e7e7; color: black;
-  padding: 12px 29px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+#slide{
+  grid-area:2/2/3/5
 }
 
-#all{
-   background-image: url("https://i.pinimg.com/originals/21/67/fe/2167fe65ecb05bfb1d0e46f295c6abbb.jpg");
-background-size:cover;
+.color{
+  color:black;
+}
+#ad{
+  grid-area:2/1/3/2;
+  margin-left:8%;
+  margin-right:5%;
+}
+
+#meme{
+  grid-area:2/5/3/6;
+    margin-left:8%;
+  margin-right:5%;
+}
+
+#words{
+  grid-area:3/2/4/5;
+  font-family: 'Oswald', sans-serif;
+margin-top:20px;
 }
 
 p{
-  font-family: 'Fjalla One', sans-serif;
-color:white;
-  font-size:21px;
+  font-size:20px;
 }
 
+#space{
+  margin-top:10px;
+}
 
-
-#tweetBox{
- grid-area:1/1/2/2;
-  background:white;
-  border:solid 1px;
-  margin: 10px;
-  padding:10px;
+#footer{
+  grid-area:6/1/7/6;
 }
